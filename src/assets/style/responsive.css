@@ -1,0 +1,165 @@
+@media (max-width: 1000px) {
+  .navbar-collapse {
+    margin-left: 0.5rem !important;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: clamp(1.5rem, 5vw, 2rem) !important;
+  }
+
+  .d-txt {
+    font-size: clamp(1em, 5vw, 0.25em) !important;
+  }
+
+  .p-txt {
+    font-size: clamp(0.6em, 5vw, 0.8em) !important;
+  }
+
+  .c-inner {
+    min-height: 24rem !important;
+  }
+
+  .needs-wrapper {
+    padding-top: 2.5rem !important;
+  }
+
+  .t-inner {
+    height: 35rem !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar-collapse {
+    margin-left: 0.5rem !important;
+  }
+
+  .hero-details {
+    padding: 1rem;
+  }
+
+  p.p-btn {
+    text-align: center !important;
+  }
+
+  .c-inner {
+    height: 35rem !important;
+  }
+
+  .needs-wrapper {
+    padding-top: 1rem !important;
+  }
+
+  .t-inner {
+    height: 40rem !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .navbar-collapse {
+    margin-left: 0.5rem !important;
+  }
+
+  .hero-details {
+    padding: 1rem;
+  }
+
+  p.p-btn {
+    text-align: center !important;
+  }
+
+  .c-inner {
+    height: 35rem !important;
+  }
+
+  .needs-wrapper {
+    padding-top: 1rem !important;
+  }
+
+  .t-inner {
+    height: 40rem !important;
+  }
+}
+
+@media (width: 320px) {
+  .navbar-brand img {
+    width: 180px !important;
+  }
+
+  .t-inner {
+    height: 45rem !important;
+  }
+}
+
+@media (width: 768px) {
+  .navbar-collapse {
+    margin-left: 0.5rem !important;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: clamp(1.5rem, 5vw, 2rem) !important;
+  }
+
+  .d-txt {
+    font-size: clamp(1em, 5vw, 0.25em) !important;
+  }
+
+  .p-txt {
+    font-size: clamp(0.6em, 5vw, 0.6em) !important;
+  }
+
+  .c-inner {
+    min-height: 24rem !important;
+  }
+
+  .needs-wrapper {
+    padding-top: 2.5rem !important;
+  }
+
+  .t-inner {
+    height: 38rem !important;
+  }
+}
+
+@media (width: 1024px) {
+  .nav-link {
+    margin: clamp(0.4rem, 5vw, 0.7rem) !important;
+  }
+  .navbar-collapse {
+    margin-left: 0.5rem !important;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: clamp(1.5rem, 5vw, 2rem) !important;
+  }
+
+  .d-txt {
+    font-size: clamp(1em, 5vw, 0.25em) !important;
+  }
+
+  .p-txt {
+    font-size: clamp(0.6em, 5vw, 0.8em) !important;
+  }
+
+  .c-inner {
+    min-height: 24rem !important;
+  }
+
+  .needs-wrapper {
+    padding-top: 2.5rem !important;
+  }
+
+  .t-inner {
+    height: 35rem !important;
+  }
+
+  .needs-wrapper {
+    padding-top: 3.5rem !important;
+  }
+
+  div.s-txt {
+    display: none !important;
+  }
+}

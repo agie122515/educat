@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="src/assets/style/responsive.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link href="src/assets/style/style.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="src/assets/images/pci-social.png" />
+    <title>Educat</title>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <nav
+          class="navbar navbar-expand-lg navbar-light bg-white justify-content-between"
+        >
+          <div class="container">
+            <div>
+              <a class="navbar-brand" href="#">
+                <img
+                  class="xl-brand-logo"
+                  src="src/assets/images/logo.png"
+                  width="232"
+                  height="87"
+                  class="d-inline-block align-top"
+                  alt=""
+                />
+              </a>
+            </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse pt-2" id="navbarNav">
+              <ul class="navbar-nav r-navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Products
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Blogs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link btn btn-success text-white pl-4 pr-4"
+                    type="submit"
+                    >BOOK A DEMO</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!--HERO SECTION-->
+      <section id="hero">
+        <div class="wrapper pos-relative">
+          <div class="row justify-content-center w-100">
+            <div
+              class="col-xs-6 col-sm-6 col-md-6 col-lg-5 d-md-none d-lg-none text-center"
+            >
+              <div class="hero-img">
+                <img
+                  class="img-fluid"
+                  src="src/assets/images/hero-banner.png"
+                  alt="hero-banner"
+                />
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-5 col-lg-4 p-6">
+              <div class="hero-details pt-5">
+                <h1>The LMS that's built for your needs</h1>
+                <p class="d-txt">
+                  Experience seamless communication, easy data migration, and
+                  secured user management in one awesome platform.
+                </p>
+                <p class="p-btn">
+                  <a
+                    type="button"
+                    class="btn btn-primary text-white mt-2 pl-5 pr-5 pt-2 pb-2"
+                  >
+                    GO TO LMS PORTAL
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-xs-6 col-sm-6 col-md-5 col-lg-5 d-none d-sm-block text-center"
+            >
+              <div class="hero-img">
+                <img
+                  class="img-fluid"
+                  src="src/assets/images/hero-banner.png"
+                  alt="hero-banner"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row w-100 justify-content-center pt-2">
+            <div class="col-sm-6 col-md-5 col-md-4 text-center">
+              <a
+                type="button"
+                id="down_btn"
+                class="btn btn-lg btn-success d-btn p-4"
+              >
+                <img
+                  src="src/assets/images/down.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--PRODUCTS SECTION-->
+      <section id="products">
+        <div class="wrapper text-center">
+          <h5 class="sub-header" id="product_lists">OUR PRODUCTS</h5>
+          <h1 class="header">Learn without Limits</h1>
+          <div class="row w-100 justify-content-center p-5 mt-3">
+            <div class="col-md-3 col-lg-3 text-center pt-2">
+              <img
+                src="src/assets/images/product1.svg"
+                alt=""
+                class="img-fluid"
+              />
+              <h5 class="mt-5">Educat LMS</h5>
+              <p class="mt-4 text-secondary p-txt">
+                A Learning Management System and content library that offers a
+                variety of ways on how to learn through blended learning.
+              </p>
+            </div>
+            <div class="col-md-4 col-lg-4 text-center pt-2">
+              <img
+                src="src/assets/images/product2.svg"
+                alt=""
+                class="img-fluid"
+              />
+              <h5 class="mt-5">Educat Library</h5>
+              <p class="mt-4 text-secondary p-txt">
+                An online library that contains Digital Modules, Worksheets and
+                Assessments aligned with DepEd’s K to 12 Curriculum
+              </p>
+            </div>
+            <div class="col-md-3 col-lg-3 text-center pt-2">
+              <img
+                src="src/assets/images/product3.svg"
+                alt=""
+                class="img-fluid"
+              />
+              <h5 class="mt-5">Educat Rover</h5>
+              <p class="mt-4 text-secondary p-txt">
+                An offline solution run by mini-computers that are equipped with
+                wireless local area network for contactless file transfers.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--DO MORE EDUCAT SECTION-->
+      <section id="do_more">
+        <div class="wrapper bg-blue pos-relative pt-4">
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <div class="carousel-inner c-inner">
+              <div class="carousel-item active p-3">
+                <div class="row w-100 justify-content-center p-2">
+                  <div class="col-sm-12 col-md-6 col-lg-5">
+                    <h2 class="text-white pb-3">Do more with Educat</h2>
+                    <div class="row w-100">
+                      <div class="col-md-2 d-md-none d-lg-block s-txt">
+                        <h2 class="text-white">01</h2>
+                      </div>
+                      <div class="col-md-10 pt-2">
+                        <h5 class="text-white">Offline Learning</h5>
+                        <p class="text-white m-txt">
+                          The ideal solution to empower learners with no access
+                          to an internet connection.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-7">
+                    <img
+                      src="src/assets/images/feature1.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item p-3">
+                <div class="row w-100 justify-content-center p-3">
+                  <div class="col-sm-12 col-md-6 col-lg-5">
+                    <h2 class="text-white pb-3">Do more with Educat</h2>
+
+                    <div class="row w-100">
+                      <div class="col-md-2 d-md-none d-lg-block s-txt">
+                        <h2 class="text-white">02</h2>
+                      </div>
+                      <div class="col-md-10 pt-2">
+                        <h5 class="text-white">
+                          Supplementory Learning Materials
+                        </h5>
+                        <p class="text-white m-txt">
+                          Our printed and interactive learning materials are
+                          perfect to help strethen your learning.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-7">
+                    <img
+                      src="src/assets/images/feature2.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item p-3">
+                <div class="row w-100 justify-content-center p-3">
+                  <div class="col-sm-12 col-md-6 col-lg-5">
+                    <h2 class="text-white pb-3">Do more with Educat</h2>
+
+                    <div class="row w-100">
+                      <div class="col-md-2 d-md-none d-lg-block s-txt">
+                        <h2 class="text-white">03</h2>
+                      </div>
+                      <div class="col-md-10 pt-2">
+                        <h5 class="text-white">All-in-one LMS Platform</h5>
+                        <p class="text-white m-txt">
+                          All the solutions you need in one powerful platform.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-7">
+                    <img
+                      src="src/assets/images/feature3.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a
+              class="carousel-control-next"
+              href="#carouselExampleControls"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!--NEED SECTION-->
+      <section id="needs">
+        <div class="wrapper">
+          <div class="row w-100 justify-content-center">
+            <h1 class="header text-center p-3">
+              The LMS that's built for every need
+            </h1>
+          </div>
+          <div class="row w-100 justify-content-center p-3">
+            <div class="col-md-5" data-aos="fade-up">
+              <img src="src/assets/images/lms1.png" alt="" class="img-fluid" />
+            </div>
+            <div class="col-md-5" data-aos="fade-left">
+              <div class="needs-wrapper">
+                <h1 class="header pb-4">General Education</h1>
+                <p class="n-txt">
+                  Transform your learning digitally. Streamline all your school
+                  processes in one platform made especially for students, for
+                  teachers, and for parents.
+                </p>
+                <a href="#" class="pt-5 n-link">Learn more</a>
+              </div>
+            </div>
+          </div>
+          <div class="row w-100 justify-content-center p-3">
+            <div class="col-md-5 d-sm-block d-md-none d-lg-none">
+              <img src="src/assets/images/lms2.png" alt="" class="img-fluid" />
+            </div>
+
+            <div class="col-md-5" data-aos="fade-up">
+              <div class="needs-wrapper">
+                <h1 class="header pb-4">Professional Training</h1>
+                <p class="n-txt">
+                  Bringing you a platform that provides end to end solution in
+                  the training process for your employees, customers, or
+                  partners that allows.
+                </p>
+                <a href="#" class="pt-5 n-link">Learn more</a>
+              </div>
+            </div>
+            <div
+              class="col-md-5 d-none d-sm-block d-sm-none d-md-block d-lg-block"
+              data-aos="fade-left"
+            >
+              <img src="src/assets/images/lms2.png" alt="" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--WORK SECTION-->
+      <section id="work">
+        <div class="wrapper bg-grey pt-5">
+          <div class="row w-100 justify-content-center pb-3">
+            <div class="col-md-6 text-center pt-3 d-md-none d-lg-none">
+              <img
+                src="src/assets/images/m-icons.png"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+
+            <div class="col-sm-6 col-md-6 pl-4">
+              <h1 class="header w-header pb-3">
+                Designed to help you Work Smarter not Harder
+              </h1>
+              <p class="w-txt pb-4">
+                Educat LMS offers the perfect end-to-end solution for schools
+                and businesses. It also provides you with all the features
+                needed to make learning and training easier.
+              </p>
+              <p class="p-btn">
+                <a
+                  type="button"
+                  class="btn btn-lg btn-primary text-white mt-2 pl-5 pr-5 pt-3 pb-3"
+                >
+                  BOOK A DEMO
+                </a>
+              </p>
+            </div>
+            <div
+              class="col-md-6 text-center pt-3 d-none d-sm-block d-md-block d-lg-block"
+            >
+              <img
+                src="src/assets/images/m-icons.png"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="wrapper st-bg">
+          <div class="row w-100 justify-content-center">
+            <div class="col-md-3 text-center">
+              <h2 class="st-txt pt-3" id="counter">1,200</h2>
+              <p>Learning Materials Donated</p>
+            </div>
+            <div class="col-md-3 text-center">
+              <h2 class="st-txt pt-3" id="counter2">5,500</h2>
+              <p>LMS Users</p>
+            </div>
+            <div class="col-md-3 text-center">
+              <h2 class="st-txt pt-3" id="counter3">3000</h2>
+              <p>Trained Professionals</p>
+            </div>
+            <div class="col-md-3 text-center">
+              <h2 class="st-txt pt-3" id="counter4">000</h2>
+              <p>Lorem Ipsum</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--TESTIMONIALS SECTION-->
+      <section id="testimonials">
+        <div class="wrapper bg-orange pt-3">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <ol class="carousel-indicators">
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="1"
+              ></li>
+            </ol>
+            <div class="carousel-inner t-inner">
+              <div class="carousel-item active">
+                <div class="row w-100 justify-content-end p-3">
+                  <div class="col-md-6">
+                    <h2 class="pb-5 mt-5">They Said It First</h2>
+                    <p class="pb-5 t-txt">
+                      Scuola Maria is fortunate to work with PCI early on when
+                      the pandemic hit the country. My ideas and my curriculum
+                      design all came to life in the NEST — our exclusive LMS
+                      for our students. If not for PCI, we wouldn't be able to
+                      continue education at this very difficult time.
+                    </p>
+                    <h5>Ina Gonda-Ramos, MAE-CDE, LPT</h5>
+                    <p class="mb-0">Program Director of Scuola Maria</p>
+                  </div>
+                  <div
+                    class="col-md-5 m-0 d-none d-sm-block d-sm-none d-md-block d-lg-block"
+                  >
+                    <img
+                      src="src/assets/images/testimonial2.png"
+                      alt=""
+                      class="img-fluid t-img float-right"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row w-100 justify-content-end p-3">
+                  <div class="col-md-6">
+                    <h2 class="pb-5 mt-5">They Said It First</h2>
+                    <p class="pb-5 t-txt">
+                      Scuola Maria is fortunate to work with PCI early on when
+                      the pandemic hit the country. My ideas and my curriculum
+                      design all came to life in the NEST — our exclusive LMS
+                      for our students. If not for PCI, we wouldn't be able to
+                      continue education at this very difficult time.
+                    </p>
+                    <h5>Ina Gonda-Ramos, MAE-CDE, LPT</h5>
+                    <p>Program Director of Scuola Maria</p>
+                  </div>
+                  <div
+                    class="col-md-5 m-0 d-none d-sm-block d-sm-none d-md-block d-lg-block"
+                  >
+                    <img
+                      src="src/assets/images/testimonial2.png"
+                      alt=""
+                      class="img-fluid t-img float-right"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--PARTNERS SECTION-->
+      <section id="partners">
+        <div class="wrapper p-wrapper p-4">
+          <h5 class="sub-header text-center">OUR HAPPY CLIENTS</h5>
+          <h1 class="header text-center">Our Partners</h1>
+          <div class="row w-100 justify-content-center pt-5">
+            <div class="col-4 col-md-2 text-center p-3">
+              <img
+                src="src/assets/images/c1.png"
+                onmouseover="this.src='src/assets/images/partner1.png'"
+                onmouseout="this.src='src/assets/images/c1.png'"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-4 col-md-2 text-center p-3">
+              <img
+                src="src/assets/images/c2.png"
+                onmouseover="this.src='src/assets/images/partner2.png'"
+                onmouseout="this.src='src/assets/images/c2.png'"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-4 col-md-2 text-center p-3">
+              <img
+                src="src/assets/images/c3.png"
+                onmouseover="this.src='src/assets/images/partner3.png'"
+                onmouseout="this.src='src/assets/images/c3.png'"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-4 col-md-2 text-center p-3">
+              <img
+                src="src/assets/images/c4.png"
+                onmouseover="this.src='src/assets/images/partner4.png'"
+                onmouseout="this.src='src/assets/images/c4.png'"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-4 col-md-2 text-center p-3">
+              <img
+                src="src/assets/images/c5.png"
+                onmouseover="this.src='src/assets/images/partner5.png'"
+                onmouseout="this.src='src/assets/images/c5.png'"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--ASK SECTION-->
+      <section id="info">
+        <div
+          class="wrapper bg-ask pt-5 pb-5 d-none d-sm-block d-md-none d-lg-block"
+        >
+          <div class="row w-100 justify-content-center">
+            <div class="col-md-9 text-center">
+              <h1 class="header text-white pb-3">
+                Want to see what Educat can do for you?
+              </h1>
+              <p class="a-txt text-white">
+                Learn more by booking a demo today and discover why Educat is
+                the only platform you'll ever need for your learning and
+                training needs.
+              </p>
+              <p class="">
+                <button
+                  type="button"
+                  class="btn btn-lg btn-secondary mt-2 pl-5 pr-5 pt-3 pb-3"
+                >
+                  LET'S TALK
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper bg-ask-m pt-5 pb-5 d-md-block d-lg-none d-sm-block">
+          <div class="row w-100 justify-content-center">
+            <div class="col-md-9 text-center">
+              <h1 class="header text-white pb-3">
+                Want to see what Educat can do for you?
+              </h1>
+              <p class="a-txt text-white">
+                Learn more by booking a demo today and discover why Educat is
+                the only platform you'll ever need for your learning and
+                training needs.
+              </p>
+              <p class="">
+                <button
+                  type="button"
+                  class="btn btn-lg btn-secondary mt-2 pl-5 pr-5 pt-3 pb-3"
+                >
+                  LET'S TALK
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper pt-2">
+          <div class="row no-gutters w-100 justify-content-center pos-relative">
+            <div class="col-2 col-sm-2 col-md-1 text-center">
+              <img src="src/assets/images/s1.png" alt="" class="img-fluid" />
+            </div>
+            <div class="col-2 col-sm-2 col-md-1 text-center">
+              <img src="src/assets/images/s2.png" alt="" class="img-fluid" />
+            </div>
+            <div class="col-2 col-sm-2 col-md-1 text-center">
+              <img src="src/assets/images/s3.png" alt="" class="img-fluid" />
+            </div>
+            <div class="col-2 col-sm-2 col-md-1 text-center">
+              <img
+                src="src/assets/images/pci-social.png"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--FOOTER-->
+      <footer>
+        <div class="wrapper pb-5">
+          <div class="row w-100 justify-content-center p-5">
+            <div class="col-md-2 text-center">
+              <img src="src/assets/images/logo.png" alt="" class="img-fluid" />
+            </div>
+            <div
+              class="col-md-3 pt-4 text-center d-none d-sm-block d-sm-none d-md-block d-lg-block"
+            >
+              <small>© Copyright 2021. All rights reserved.</small>
+            </div>
+            <div class="col-md-1 pt-4 text-center">
+              <a class="text-black" href="#"><h6>About Us</h6></a>
+            </div>
+            <div class="col-md-1 pt-4 text-center">
+              <a class="text-black" href="#"><h6>Products</h6></a>
+            </div>
+            <div class="col-md-1 pt-4 text-center">
+              <a class="text-black" href="#"><h6>Shop</h6></a>
+            </div>
+            <div class="col-md-2 pt-4 text-center">
+              <a class="text-black" href="#"><h6>Terms of Use</h6></a>
+            </div>
+            <div class="col-md-2 pt-4 text-center">
+              <a class="text-black" href="#"><h6>Data Privacy</h6></a>
+            </div>
+            <div class="col-md-3 pt-4 text-center d-md-none d-lg-none">
+              <small>© Copyright 2021. All rights reserved.</small>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      $(document).ready(function () {
+        counter1();
+        counter2();
+        counter3();
+        counter4();
+
+        AOS.init({
+          delay: 500,
+          duration: 400,
+          easing: "ease",
+          once: true,
+        });
+
+        $("#down_btn").click(function () {
+          try {
+            $("html,body").animate(
+              {
+                scrollTop: $("#product_lists").offset().top - 50,
+              },
+              1000
+            );
+          } catch (err) {
+            allert(err);
+          }
+        });
+
+        function counter1() {
+          const counterUp = window.counterUp.default;
+
+          const callback = (entries) => {
+            entries.forEach((entry) => {
+              const el = entry.target;
+              if (
+                entry.isIntersecting &&
+                !el.classList.contains("is-visible")
+              ) {
+                counterUp(el, {
+                  duration: 2000,
+                  delay: 16,
+                });
+                el.classList.add("is-visible");
+              }
+            });
+          };
+
+          const IO = new IntersectionObserver(callback, { threshold: 1 });
+
+          const el = document.querySelector("#counter");
+          IO.observe(el);
+        }
+        function counter2() {
+          const counterUp = window.counterUp.default;
+
+          const callback = (entries) => {
+            entries.forEach((entry) => {
+              const el = entry.target;
+              if (
+                entry.isIntersecting &&
+                !el.classList.contains("is-visible")
+              ) {
+                counterUp(el, {
+                  duration: 2000,
+                  delay: 16,
+                });
+                el.classList.add("is-visible");
+              }
+            });
+          };
+
+          const IO = new IntersectionObserver(callback, { threshold: 1 });
+
+          const el = document.querySelector("#counter2");
+          IO.observe(el);
+        }
+        function counter3() {
+          const counterUp = window.counterUp.default;
+
+          const callback = (entries) => {
+            entries.forEach((entry) => {
+              const el = entry.target;
+              if (
+                entry.isIntersecting &&
+                !el.classList.contains("is-visible")
+              ) {
+                counterUp(el, {
+                  duration: 2000,
+                  delay: 16,
+                });
+                el.classList.add("is-visible");
+              }
+            });
+          };
+
+          const IO = new IntersectionObserver(callback, { threshold: 1 });
+
+          const el = document.querySelector("#counter3");
+          IO.observe(el);
+        }
+        function counter4() {
+          const counterUp = window.counterUp.default;
+
+          const callback = (entries) => {
+            entries.forEach((entry) => {
+              const el = entry.target;
+              if (
+                entry.isIntersecting &&
+                !el.classList.contains("is-visible")
+              ) {
+                counterUp(el, {
+                  duration: 2000,
+                  delay: 16,
+                });
+                el.classList.add("is-visible");
+              }
+            });
+          };
+
+          const IO = new IntersectionObserver(callback, { threshold: 1 });
+
+          const el = document.querySelector("#counter4");
+          IO.observe(el);
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -126,6 +126,13 @@
   .t-inner {
     height: 38rem !important;
   }
+
+  small {
+    font-size: 0.5em !important;
+  }
+  h6 {
+    font-size: 0.6em !important;
+  }
 }
 
 @media (width: 820px) {

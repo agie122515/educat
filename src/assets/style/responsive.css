@@ -29,7 +29,7 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .c-inner {
     min-height: 27.9rem !important;
   }
@@ -125,6 +125,12 @@
 
   .t-inner {
     height: 38rem !important;
+  }
+}
+
+@media (width: 820px) {
+  h6 {
+    font-size: 0.9em !important;
   }
 }
 

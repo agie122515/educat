@@ -29,6 +29,12 @@
   }
 }
 
+@media (max-width: 800px) {
+  .c-inner {
+    min-height: 27.9rem !important;
+  }
+}
+
 @media (max-width: 600px) {
   .navbar-collapse {
     margin-left: 0.5rem !important;

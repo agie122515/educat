@@ -76,10 +76,11 @@
                     Products
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Educat LMS</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Educat Library</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Educat Rover</a>
                   </div>
                 </li>
                 <li class="nav-item">
@@ -89,7 +90,9 @@
                   <a class="nav-link" href="#">Contact</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link btn btn-success text-white pl-4 pr-4"
+                  <a
+                    id="btn_book"
+                    class="nav-link btn btn-success text-white pl-4 pr-4"
                     >BOOK A DEMO</a
                   >
                 </li>
@@ -378,6 +381,7 @@
               </p>
               <p class="p-btn">
                 <a
+                  id="talk_btn"
                   class="btn btn-lg btn-primary text-white mt-2 pl-5 pr-5 pt-3 pb-3"
                 >
                   BOOK A DEMO
@@ -645,7 +649,6 @@
         </div>
       </footer>
     </div>
-    <script type="module" src="/src/main.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -687,6 +690,30 @@
             $("html,body").animate(
               {
                 scrollTop: $("#product_lists").offset().top - 50,
+              },
+              1000
+            );
+          } catch (err) {
+            allert(err);
+          }
+        });
+        $("#btn_book").click(function () {
+          try {
+            $("html,body").animate(
+              {
+                scrollTop: $("#work").offset().top - 50,
+              },
+              1000
+            );
+          } catch (err) {
+            allert(err);
+          }
+        });
+        $("#talk_btn").click(function () {
+          try {
+            $("html,body").animate(
+              {
+                scrollTop: $("#info").offset().top - 50,
               },
               1000
             );

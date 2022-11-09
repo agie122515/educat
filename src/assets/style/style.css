@@ -240,13 +240,15 @@ img.paws-img {
   border-radius: 16px;
 }
 
-.hero-img {
-  border-radius: 100%;
-  animation: shadow-pulse 1s infinite;
-}
-
 footer a {
   color: #000;
+}
+
+/*ANIMATIONS*/
+
+.edu-img {
+  border-radius: 30%;
+  animation: shadow-pulse 1s infinite;
 }
 
 @keyframes shadow-pulse {

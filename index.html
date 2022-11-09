@@ -61,7 +61,7 @@
                   <a class="nav-link" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About Us</a>
+                  <a id="about_link" class="nav-link" href="#">About Us</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a
@@ -76,18 +76,24 @@
                     Products
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Educat LMS</a>
+                    <a id="prod_one" class="dropdown-item" href="#"
+                      >Educat LMS</a
+                    >
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Educat Library</a>
+                    <a id="prod_two" class="dropdown-item" href="#"
+                      >Educat Library</a
+                    >
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Educat Rover</a>
+                    <a id="prod_three" class="dropdown-item" href="#"
+                      >Educat Rover</a
+                    >
                   </div>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                   <a class="nav-link" href="#">Blogs</a>
-                </li>
+                </li> -->
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a id="contact_link" class="nav-link" href="#">Contact</a>
                 </li>
                 <li class="nav-item">
                   <a
@@ -671,154 +677,6 @@
     ></script>
     <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      $(document).ready(function () {
-        counter1();
-        counter2();
-        counter3();
-        counter4();
-
-        AOS.init({
-          delay: 500,
-          duration: 400,
-          easing: "ease",
-          once: true,
-        });
-
-        $("#down_btn").click(function () {
-          try {
-            $("html,body").animate(
-              {
-                scrollTop: $("#product_lists").offset().top - 50,
-              },
-              1000
-            );
-          } catch (err) {
-            allert(err);
-          }
-        });
-        $("#btn_book").click(function () {
-          try {
-            $("html,body").animate(
-              {
-                scrollTop: $("#work").offset().top - 50,
-              },
-              1000
-            );
-          } catch (err) {
-            allert(err);
-          }
-        });
-        $("#talk_btn").click(function () {
-          try {
-            $("html,body").animate(
-              {
-                scrollTop: $("#info").offset().top - 50,
-              },
-              1000
-            );
-          } catch (err) {
-            allert(err);
-          }
-        });
-
-        function counter1() {
-          const counterUp = window.counterUp.default;
-
-          const callback = (entries) => {
-            entries.forEach((entry) => {
-              const el = entry.target;
-              if (
-                entry.isIntersecting &&
-                !el.classList.contains("is-visible")
-              ) {
-                counterUp(el, {
-                  duration: 2000,
-                  delay: 16,
-                });
-                el.classList.add("is-visible");
-              }
-            });
-          };
-
-          const IO = new IntersectionObserver(callback, { threshold: 1 });
-
-          const el = document.querySelector("#counter");
-          IO.observe(el);
-        }
-        function counter2() {
-          const counterUp = window.counterUp.default;
-
-          const callback = (entries) => {
-            entries.forEach((entry) => {
-              const el = entry.target;
-              if (
-                entry.isIntersecting &&
-                !el.classList.contains("is-visible")
-              ) {
-                counterUp(el, {
-                  duration: 2000,
-                  delay: 16,
-                });
-                el.classList.add("is-visible");
-              }
-            });
-          };
-
-          const IO = new IntersectionObserver(callback, { threshold: 1 });
-
-          const el = document.querySelector("#counter2");
-          IO.observe(el);
-        }
-        function counter3() {
-          const counterUp = window.counterUp.default;
-
-          const callback = (entries) => {
-            entries.forEach((entry) => {
-              const el = entry.target;
-              if (
-                entry.isIntersecting &&
-                !el.classList.contains("is-visible")
-              ) {
-                counterUp(el, {
-                  duration: 2000,
-                  delay: 16,
-                });
-                el.classList.add("is-visible");
-              }
-            });
-          };
-
-          const IO = new IntersectionObserver(callback, { threshold: 1 });
-
-          const el = document.querySelector("#counter3");
-          IO.observe(el);
-        }
-        function counter4() {
-          const counterUp = window.counterUp.default;
-
-          const callback = (entries) => {
-            entries.forEach((entry) => {
-              const el = entry.target;
-              if (
-                entry.isIntersecting &&
-                !el.classList.contains("is-visible")
-              ) {
-                counterUp(el, {
-                  duration: 2000,
-                  delay: 16,
-                });
-                el.classList.add("is-visible");
-              }
-            });
-          };
-
-          const IO = new IntersectionObserver(callback, { threshold: 1 });
-
-          const el = document.querySelector("#counter4");
-          IO.observe(el);
-        }
-      });
-    </script>
+    <script src="src/assets/js/feature.js"></script>
   </body>
 </html>

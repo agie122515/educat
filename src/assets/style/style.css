@@ -256,7 +256,7 @@ footer a {
     box-shadow: 0 0 0 0px rgba(253, 155, 15, 0.2);
   }
   100% {
-    box-shadow: 0 0 0 35px rgba(253, 155, 15, 0);
+    box-shadow: 0 0 0 55px rgba(253, 155, 15, 0);
   }
 }
 
@@ -265,6 +265,6 @@ footer a {
     box-shadow: 0 0 0 0px rgba(253, 155, 15, 0.1);
   }
   100% {
-    box-shadow: 0 0 0 70px rgba(253, 155, 15, 0);
+    box-shadow: 0 0 0 80px rgba(253, 155, 15, 0);
   }
 }

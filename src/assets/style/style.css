@@ -45,7 +45,7 @@ h5 {
 
 .nav-link {
   font-size: 15px;
-  margin: clamp(0.4rem, 5vw, 1.2rem);
+  margin: clamp(0.5rem, 5vw, 1.2rem);
 }
 
 .navbar-collapse {
